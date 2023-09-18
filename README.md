@@ -1,1 +1,1 @@
-# edreeswahezi.com
+Edrees's personal website, built using the Astro web framework. 
