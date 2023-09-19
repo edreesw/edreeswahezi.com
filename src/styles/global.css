@@ -1,0 +1,148 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+html.dark {
+    /* color palette taken from: https://www.happyhues.co/palettes/4 */
+    --background-color: #16161a; /*darker*/
+    --background-secondary-color: #242629; /*lighter*/
+    --accent-primary: #7f5af0; 
+    --accent-secondary: #2cb67d; /*highlight?*/
+    --font-color-headers: #fffffe; /*headers, button text...*/
+    --font-color-paragraph: #94a1b2; 
+
+}
+
+html.light {
+    /* color palette taken from: https://www.happyhues.co/palettes/6 */
+    --background-color: #fffffe; /*lighter */
+    --background-secondary-color: #d1d1e9; /*darker */
+    --accent-primary: #6246ea; 
+    --accent-secondary: #e45858; /*highlight?*/
+    --font-color-headers: #2b2c34; /*headers, button text...*/
+    --font-color-paragraph: #2b2c34; 
+}
+
+html.light-alt {
+    --background-color: #fffffe; /*lighter */
+    --background-secondary-color: #d8eefe; /*darker */
+    --accent-primary: #3da9fc; 
+    --accent-secondary: #ef4565; /*highlight?*/
+    --font-color-headers: #094067; /*headers, button text...*/
+    --font-color-paragraph: #5f6c7b;
+}
+
+
+:root {
+    background-color: var(--background-color);
+    
+}
+
+p {
+    margin: 1rem 0;
+    color: var(--font-color-paragraph); 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    font-weight: bold;
+    color: var(--font-color-headers); 
+}
+
+.logo-container {
+    color: var(--font-color-headers); 
+}
+
+.logo-container:hover {
+    text-decoration: none;
+}
+
+body {
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-primary);
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+ul{
+    /*list-style-position: inside;*/
+    list-style: none;
+    padding: 1rem 0; 
+}
+
+main ul li::before {
+    content: "\2022"; 
+    color: var(--font-color-paragraph); 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: 1em; 
+}
+
+section {
+    margin: 1rem 0;
+}
+
+.container {
+    /*max-width: 1200px;*/
+    /*max-width: 900px; */
+    /* 900 seems to be a good width for text/article content, but might want to set the container 
+    width wider and set up another class/container for text specifically since you might want to 
+    use a wider general width for other less text oriented pages (like the Art subpage, which will 
+    have tiles of images...) */
+    max-width: 65ch;
+    /* ch is approx one char length, <=75 chars per line is apparently best for readability... 
+    if using this ch then might wanna do what the above comment suggests and have a separate article/text/p width 
+    using ch, since it looks rather narrow for everything that's not just text */
+    /*max-width: 60rem; */
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+main {
+    flex: 1; 
+    width: 100%;
+    /*padding: 10px 0; */
+}
+
+main h1,
+main h2, 
+main h3, 
+main h4, 
+main h5, 
+main h6 {
+    border-bottom: 1px solid var(--font-color-paragraph);
+}
+
+
+
+@media (max-width: 700px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+
