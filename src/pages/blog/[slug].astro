@@ -1,0 +1,42 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const posts = await Astro.glob("../../posts/*.md"); 
+    return posts.map(post => (
+        {
+            params: {
+                slug: post.frontmatter.slug
+            },
+            props: {
+                post
+            }
+        }
+    ))
+}
+
+const { Content, frontmatter } = Astro.props.post;
+---
+
+<Layout title={frontmatter.title}>
+    <main>
+        <div class="container">
+            <header id="post-header">
+                <h1 id="post-title">{frontmatter.title}</h1>
+
+                <a id="blog-back-link" href="/blog">&crarr; Back</a>
+
+                <p id="blog-category">Category: {frontmatter.category}</p>
+            </header>
+
+            <article class="blog-post">
+                <Content />
+            </article>
+        </div>
+    </main>
+</Layout>
+
+
+<style>
+
+</style>

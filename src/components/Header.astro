@@ -1,16 +1,20 @@
-<header class="nav-header">
+<header id="nav-header">
     <div class="container">
         <nav>
-            <a class="logo-container" href="/">
+            <a id="logo-container" href="/">
                 <img class="logo" src="/mirrorshieldpixel.png" alt="Edrees's Mirror Shield Pixel Logo">
-                <span class="header-text">Edrees Wahezi</span>
+                <span id="header-text">Edrees Wahezi</span>
             </a>
 
-            <ul>
+            <ul id="nav-tabs-list">
                 <li><a href="/about">About</a></li>
+                <li>/</li>
                 <li><a href="/dev">Dev</a></li>
+                <li>/</li>
                 <li><a href="/blog">Blog</a></li>
+                <li>/</li>
                 <li><a href="/art">Art</a></li>
+                <li>/</li>
                 <li><a href="/music">Music</a></li>
             </ul>
         </nav>
@@ -18,31 +22,42 @@
 </header>
 
 <style>
-    header.nav-header {
+    #nav-header {
         padding: 2rem 0 1rem;
     }
 
-    .header-text {
+    #header-text {
         font-size: 1.2rem;
         font-weight: 500;
     }
 
-    nav ul {
+    #nav-tabs-list {
         list-style: none;
         display: flex; 
         justify-content: center;
-        gap: 0.8rem;
+        gap: 1rem;
         
         padding: 1rem 0; 
     
     }
 
-    .logo-container {
+    #logo-container {
         display: flex;
         align-items: center;
         gap: .8em; 
+
+        color: var(--font-color); 
     }
     .logo {
         max-width: 2em;
+    }
+
+    #nav-header a {
+        text-decoration: none;
+        color: var(--font-color);
+    }
+
+    #nav-tabs-list a:hover {
+        text-decoration: underline;
     }
 </style>

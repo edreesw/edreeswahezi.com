@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Page not found!">
+    <main>
+        <div class="container">
+            <div id="message-container-404">
+                <a href="/">
+                    <img id="log-404" src="/mirrorshieldpixel.png" alt="Go back to home page">
+                </a>
+                <h1>404: Page not found</h1>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    #message-container-404 {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-404 {
+        max-width: 128px;
+    }
+</style>

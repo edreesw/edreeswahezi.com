@@ -10,54 +10,32 @@ html.dark {
     --background-color: #181818; /*darker*/
     --background-secondary-color: #242629; /*lighter*/
     --accent-primary: #7f5af0; 
-    --accent-secondary: #2cb67d; /*highlight?*/
     --font-color: #F2F2F2; 
 
 }
 
 html.light {
     --background-color: #fffffe; 
-    --background-secondary-color: #d1d1e9; 
+    --background-secondary-color: #dedede; 
     --accent-primary: #6246ea; 
-    --accent-secondary: #e45858; /*highlight?*/
     --font-color: #2b2c34; 
 }
 
 
 :root {
     background-color: var(--background-color);
-    
+    color: var(--font-color); 
 }
 
 p {
     margin: 1rem 0;
-    color: var(--font-color); 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: 1.2;
-    font-weight: bold;
-    color: var(--font-color); 
-    
-    margin: 1rem 0 1rem;
-}
-
-.logo-container {
-    color: var(--font-color); 
-}
-
-.logo-container:hover {
-    text-decoration: none;
-}
 
 body {
     /*font-family: 'Courier New', Courier, monospace;*/
-    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    /*font-family: -Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     line-height: 1.5;
 
     min-height: 100vh;
@@ -65,35 +43,29 @@ body {
     flex-direction: column;
 }
 
-a {
+main a {
     text-decoration: none;
     color: var(--accent-primary);
 }
 
-a:hover {
-    font-weight: bold;
+main a:hover {
+    /*font-weight: bold;*/
     text-decoration: underline;
 }
 
 ul{
     /*list-style-position: inside;*/
-    list-style: none;
-    padding: 1rem 0; 
+    /*padding: 1rem 0; */
+    color: var(--font-color);
+    margin-left: 2rem;
 }
 
-main ul li::before {
-    content: "\2022"; 
-    color: var(--font-color); 
-    font-weight: bold;
-    display: inline-block;
-    width: 1em; 
-    margin-left: 1em; 
-}
 
 section {
-    margin: 2rem 0 3rem;
+    margin: 2rem 0/* 3rem*/;
 }
 
+/*Content Containers */
 .container {
     /*max-width: 1200px;*/
     /*max-width: 900px; */
@@ -107,8 +79,9 @@ section {
     using ch, since it looks rather narrow for everything that's not just text */
     /*max-width: 60rem; */
     margin: 0 auto;
-    padding: 0 30px;
+    /*padding: 0 2rem; */ /*don't know that i really need left/right padding here since it's a single column site, but if you do add it back don't forget to increase the content width (max-width) above to account for the padding. still try to keep it under 80 or 75 though. */
 }
+
 
 
 main {
@@ -117,9 +90,23 @@ main {
     /*padding: 10px 0; */
 }
 
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    font-weight: bold;
+    
+    margin: 1rem 0 1rem;
+}
+
 section h1,
 section h2 {
-    border-bottom: 1px solid var(--font-color);
+    border-bottom: 2px solid var(--background-secondary-color);
 }
 
 
@@ -144,7 +131,7 @@ h4 {
 
 @media (max-width: 700px) {
     .container {
-        padding: 0 15px;
+        padding: 0 1rem;
     }
 }
 

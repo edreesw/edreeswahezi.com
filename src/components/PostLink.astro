@@ -1,0 +1,54 @@
+---
+export interface Props {
+    title: string,
+    date: string; 
+    category: string;
+    slug: string
+}
+
+const { title, date, category, slug } = Astro.props as Props; 
+---
+
+<a class="post-link" href=`/blog/${slug}`>
+    <div class="post-link-title-container">
+        <h3 class="post-link-title">{title}</h3>
+        <time class="post-link-date">{date}</time>                            
+    </div>
+
+
+    <p class="post-link-category">Category:
+        <span class="post-link-category-text">{category}</span></p>
+</a>
+
+<style>
+    a.post-link {
+        text-decoration: none;
+        color: var(--font-color);
+    }
+
+    a.post-link:hover .post-link-title {
+        text-decoration: underline;
+    }
+
+    .post-link-title {
+        font-weight: normal;
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .post-link-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .post-link-category {
+        margin: 0; 
+        font-size: .9rem;
+    }
+
+    .post-link-category span {
+        /*border: 1px solid var(--accent-primary);*/
+    }
+</style>

@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PostLink from "../../components/PostLink.astro";
+
+const posts = await Astro.glob("../../posts/*.md"); 
+---
+
+<Layout title="Blog">
+    <main>
+        <div class="container">
+            <header class="main-content-header">
+                <h1>Blog</h1>
+            </header>
+
+            <section class="posts-list">
+                {posts.map(post => (
+                    <PostLink 
+                        title={post.frontmatter.title}
+                        date={post.frontmatter.date}
+                        category={post.frontmatter.category}
+                        slug={post.frontmatter.slug}/>
+                ))}
+            </section>
+
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .posts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+</style>
