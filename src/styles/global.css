@@ -90,6 +90,13 @@ main {
     /*padding: 10px 0; */
 }
 
+.category-link {
+    /*
+    border: 1px solid var(--accent-primary);
+    padding:.4rem;
+    border-radius: 5px;
+    */
+}
 
 /* Headers */
 h1,

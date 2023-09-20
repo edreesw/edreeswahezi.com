@@ -22,11 +22,17 @@ const { Content, frontmatter } = Astro.props.post;
     <main>
         <div class="container">
             <header id="post-header">
-                <h1 id="post-title">{frontmatter.title}</h1>
-
                 <a id="blog-back-link" href="/blog">&crarr; Back</a>
 
-                <p id="blog-category">Category: {frontmatter.category}</p>
+                <h1 id="post-title">{frontmatter.title}</h1>
+
+                <div class="blog-info-container">
+                    <p id="blog-date">Date: {new Date(frontmatter.date).toLocaleDateString()}</p>
+                    <p id="blog-category">Category: 
+                        <a class="category-link" href=`/blog/category/${frontmatter.category}`>{frontmatter.category}</a>
+                    </p>
+                </div>
+                
             </header>
 
             <article class="blog-post">
@@ -38,5 +44,14 @@ const { Content, frontmatter } = Astro.props.post;
 
 
 <style>
+    .blog-info-container {
+        font-size: .9rem;
+        font-weight: bold; 
+        margin: 1rem 0 2rem; 
+    }
+
+    .blog-info-container p {
+        
+    }
 
 </style>

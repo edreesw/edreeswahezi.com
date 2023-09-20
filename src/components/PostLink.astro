@@ -9,16 +9,16 @@ export interface Props {
 const { title, date, category, slug } = Astro.props as Props; 
 ---
 
-<a class="post-link" href=`/blog/${slug}`>
-    <div class="post-link-title-container">
-        <h3 class="post-link-title">{title}</h3>
-        <time class="post-link-date">{date}</time>                            
+<div class="post-link-container">
+    <a class="post-link" href=`/blog/${slug}`>
+        <h3 class=post-link-title>{title}</h3>   
+        <time class="post-link-date">{new Date(date).toLocaleDateString()}</time>                     
+    </a>
+
+
+    <div class="post-link-category">
+        <a class="category-link" href=`/blog/category/${category}`>{category}</a>
     </div>
-
-
-    <p class="post-link-category">Category:
-        <span class="post-link-category-text">{category}</span></p>
-</a>
 
 <style>
     a.post-link {
@@ -26,29 +26,34 @@ const { title, date, category, slug } = Astro.props as Props;
         color: var(--font-color);
     }
 
-    a.post-link:hover .post-link-title {
+    a.post-link:hover h3 {
         text-decoration: underline;
     }
 
-    .post-link-title {
+    .post-link h3 {
         font-weight: normal;
         margin: 0;
         font-size: 1.1rem;
         font-weight: 600;
     }
 
-    .post-link-title-container {
+
+    .post-link {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .post-link-category {
+    .post-link-category a {
         margin: 0; 
         font-size: .9rem;
     }
 
-    .post-link-category span {
-        /*border: 1px solid var(--accent-primary);*/
+    @media (max-width: 700px) {
+        .post-link {
+            flex-direction: column;
+            justify-content: flex-start; 
+            align-items: stretch;
+        }
     }
 </style>
