@@ -1,35 +1,43 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import slugify from "../../utils/utils";
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+export interface Props {
+    post: CollectionEntry<"posts">
+}
 
 export async function getStaticPaths() {
-    const posts = await Astro.glob("../../posts/*.md"); 
+    const posts = await getCollection("posts"); 
+
     return posts.map(post => (
         {
             params: {
-                slug: post.frontmatter.slug
+                slug: post.slug
             },
             props: {
-                post
+                post: post
             }
         }
     ))
 }
 
-const { Content, frontmatter } = Astro.props.post;
+const { post } = Astro.props as Props;
+const { Content } = await post.render();
 ---
 
-<Layout title={frontmatter.title}>
+<Layout title={post.data.title}>
     <main>
         <div class="container">
             <header id="post-header">
                 <a id="blog-back-link" href="/blog">&crarr; Back</a>
 
-                <h1 id="post-title">{frontmatter.title}</h1>
+                <h1 id="post-title">{post.data.title}</h1>
 
                 <div class="blog-info-container">
-                    <p id="blog-date">Date: {new Date(frontmatter.date).toLocaleDateString()}</p>
+                    <p id="blog-date">Date: {post.data.date.toLocaleDateString()}</p>
                     <p id="blog-category">Category: 
-                        <a class="category-link" href=`/blog/category/${frontmatter.category}`>{frontmatter.category}</a>
+                        <a class="category-link" href=`/blog/category/${slugify(post.data.category)}`>{post.data.category}</a>
                     </p>
                 </div>
                 

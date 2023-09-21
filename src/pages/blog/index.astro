@@ -1,8 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostLink from "../../components/PostLink.astro";
+import PostsList from "../../components/PostsList.astro";
+import { getCollection } from "astro:content";
 
-const posts = await Astro.glob("../../posts/*.md"); 
+const posts = await getCollection("posts"); 
 ---
 
 <Layout title="Blog">
@@ -12,25 +14,20 @@ const posts = await Astro.glob("../../posts/*.md");
                 <h1>Blog</h1>
             </header>
 
-            <section class="posts-list">
+            <PostsList>
                 {posts.map(post => (
                     <PostLink 
-                        title={post.frontmatter.title}
-                        date={post.frontmatter.date}
-                        category={post.frontmatter.category}
-                        slug={post.frontmatter.slug}/>
+                        title={post.data.title}
+                        date={post.data.date}
+                        category={post.data.category}
+                        slug={post.slug}/>
                 ))}
-            </section>
+            </PostsList>
 
         </div>
     </main>
 </Layout>
 
 <style>
-    .posts-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
 
 </style>
