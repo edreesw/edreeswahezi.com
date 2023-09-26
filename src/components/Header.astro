@@ -1,10 +1,23 @@
+---
+import ThemeButton from "../components/ThemeButton.astro";
+---
+
 <header id="nav-header">
     <div class="container">
         <nav>
-            <a id="logo-container" href="/">
-                <img class="logo" src="/mirrorshieldpixel.png" alt="Edrees's Mirror Shield Pixel Logo">
-                <span id="header-text">Edrees Wahezi</span>
-            </a>
+            <div id="nav-title-row">
+                <a id="logo-container" href="/">
+                    <img class="logo" src="/mirrorshieldpixel.png" alt="Edrees's Mirror Shield Pixel Logo">
+                    <span id="header-text">Edrees Wahezi</span>
+                </a>
+
+                <div id="header-buttons-container">
+                    <ThemeButton />
+                    <a href="/rss.xml" id="nav-rss-link">RSS</a>
+                </div>
+                
+            </div>
+
 
             <ul id="nav-tabs-list">
                 <li><a href="/about">About</a></li>
@@ -54,7 +67,15 @@
         max-width: 2em;
     }
 
-    #nav-header a {
+    #nav-title-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .8em; 
+    }
+
+
+    a {
         text-decoration: none;
         color: var(--font-color);
     }
@@ -62,4 +83,17 @@
     #nav-tabs-list a:hover {
         text-decoration: underline;
     }
+
+    #nav-rss-link:hover {
+        text-decoration: underline;
+    }
+
+    #header-buttons-container {
+        display: flex;
+        align-items: center;
+        gap: .8em; 
+    }
+
+
+
 </style>

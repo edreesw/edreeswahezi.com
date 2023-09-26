@@ -1,0 +1,48 @@
+<button id="color-theme-toggle-button">&#127763;</button>
+
+<style>
+    #color-theme-toggle-button {
+        background-color: var(--background-color);
+        padding: 0 .2em; 
+        border-radius: 20%;
+        border: 2px solid var(--background-secondary-color);
+    }
+
+    #color-theme-toggle-button:hover {
+        background-color: var(--background-secondary-color);
+    }
+    #color-theme-toggle-button:active {
+        border: 2px solid var(--background-color);
+    }
+</style>
+
+<script is:inline>
+    //dark is hardcoded to be the default theme
+    const LIGHT = "light";
+    const DARK = "dark"; 
+    const theme = (() => {
+        if(typeof localStorage !== 'undefined' && localStorage.getItem("theme")) {
+            return localStorage.getItem("theme"); 
+        } else {
+            return DARK; 
+        }
+    })(); 
+
+    if(theme === LIGHT) {
+        document.documentElement.classList.remove(DARK); 
+        document.documentElement.classList.add(LIGHT); 
+    } 
+
+    window.localStorage.setItem("theme", theme); 
+
+    const handleToggleClick = () => {
+        const element = document.documentElement;
+        element.classList.toggle(DARK); 
+        element.classList.toggle(LIGHT); 
+
+        const isDark = element.classList.contains(DARK);
+        localStorage.setItem("theme", isDark ? DARK : LIGHT);
+    }
+
+    document.getElementById("color-theme-toggle-button").addEventListener("click", handleToggleClick);
+</script>
