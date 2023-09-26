@@ -1,6 +1,10 @@
 <footer id="footer">
     <div class="container">
-        <p>Made by Edrees Wahezi</p>
+        <div id="footer-content-container">
+            <p>{new Date().getFullYear()} &copy; Edrees Wahezi</p>
+            <a href="/rss.xml" id="nav-rss-link">RSS</a>
+        </div>
+        
     </div>
 </footer>
 
@@ -8,10 +12,24 @@
     footer {
         padding: 1rem 0; 
         text-align: center;
+
+        opacity: 0.5;
+    }
+
+    #footer-content-container {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+
         font-size: .8em;
     }
 
-    footer p {
-        opacity: 0.5;
+    #nav-rss-link {
+        color: var(--font-color); 
+        text-decoration: none;
+    }
+
+    #nav-rss-link:hover {
+        text-decoration: underline;
     }
 </style>
