@@ -1,5 +1,33 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import PostLink from './PostLink.astro';
+
+export interface Props {
+    posts: CollectionEntry<"posts">[],
+    num?: number,
+}
+
+let { posts, num } = Astro.props as Props; 
+
+//sort to put newest post first
+posts = posts.sort((a, b) => Date.parse(b.data.date.toDateString()) - Date.parse(a.data.date.toDateString()));
+
+if(num) {
+    posts = posts.slice(0, num); 
+}
+---
+
 <section class="posts-list">
-    <slot></slot>
+    {
+        posts.map(post => (
+        <PostLink 
+            title={post.data.title}
+            date={post.data.date}
+            category={post.data.category}
+            slug={post.slug}/>
+        )) 
+        
+    }
 </section>
 
 <style>

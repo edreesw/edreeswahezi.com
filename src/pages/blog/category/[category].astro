@@ -48,15 +48,8 @@ const filteredPosts = posts.filter((post) => post.data.category?.includes(catego
                 <h1>Blog: {category}</h1>
             </header>
 
-            <PostsList>
-                {filteredPosts.map(post => (
-                    <PostLink 
-                        title={post.data.title}
-                        date={post.data.date}
-                        category={post.data.category}
-                        slug={post.slug}/>
-                ))}
-            </PostsList>
+            <PostsList
+            posts={filteredPosts} />
 
         </div>
     </main>

@@ -14,15 +14,8 @@ const posts = await getCollection("posts");
                 <h1>Blog</h1>
             </header>
 
-            <PostsList>
-                {posts.map(post => (
-                    <PostLink 
-                        title={post.data.title}
-                        date={post.data.date}
-                        category={post.data.category}
-                        slug={post.slug}/>
-                ))}
-            </PostsList>
+            <PostsList
+                posts={posts} />
 
         </div>
     </main>
