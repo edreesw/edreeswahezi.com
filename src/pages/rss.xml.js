@@ -2,7 +2,10 @@ import rss, { pagesGlobToRssItems } from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 
 export async function GET(context) {
-    const blog = await getCollection('posts'); 
+    let blog = await getCollection('posts'); 
+    //sort to put newest post first
+    blog = blog.sort((a, b) => Date.parse(b.data.date.toDateString()) - Date.parse(a.data.date.toDateString()));
+    
     return rss({
         title: 'Edrees Wahezi | Blog',
         description: 'I write stuff here',
