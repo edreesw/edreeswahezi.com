@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PostsList from '../components/PostsList.astro'; 
+import { getCollection } from "astro:content";
 
+const posts = await getCollection("posts"); 
 ---
 
 <Layout title="Edrees Wahezi">
@@ -24,6 +27,13 @@ import Layout from '../layouts/Layout.astro';
 					<li><a href="https://twitch.tv/edzisedzi" target="_blank" rel="noopener noreferrer">Twitch</a></li>
 					<li><a href="https://steamcommunity.com/id/sedzi/" target="_blank" rel="noopener noreferrer">Steam</a></li>
 				</ul>
+			</section>
+
+			<section>
+				<h2>Most Recent Blog Posts</h2>
+				<PostsList
+					posts={posts}
+					num={3} />		
 			</section>
 
 		</div>
