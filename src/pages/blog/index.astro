@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import PostsList from "../../components/PostsList.astro";
 import { getCollection } from "astro:content";
+import CategoryDropdown from "../../components/CategoryDropdown.astro";
 
 const posts = await getCollection("posts"); 
 ---
@@ -12,6 +13,8 @@ const posts = await getCollection("posts");
             <header class="main-content-header">
                 <h1>Blog</h1>
             </header>
+
+            <CategoryDropdown />
 
             <PostsList
                 posts={posts} />

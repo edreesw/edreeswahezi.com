@@ -1,0 +1,115 @@
+---
+import slugify from "../utils/utils"; 
+import { getCollection, type CollectionEntry } from 'astro:content';
+const posts = await getCollection("posts");
+
+let allCategories = new Set<string>(); 
+
+posts.forEach(post => {
+    allCategories.add(post.data.category); 
+})
+
+let allCategoriesArray = Array.from(allCategories);
+allCategoriesArray.sort();  
+---
+<section id="category-dropdown-container">
+    <div id="category-dropdown">
+      <button id="dropdown-button">Categories &darr;</button>
+      <div id="dropdown-list" class="dropdown-content">
+        {
+          allCategoriesArray.map((category) => 
+              <a class="dropdown-link" href={`/blog/category/${slugify(category)}`}>{category}</a>)
+        }
+      </div>
+  </div>
+</section>
+
+
+
+<style>
+  #category-dropdown-container {
+    display: flex;
+    justify-content: end;
+  }
+
+  #category-dropdown {
+    cursor: pointer;
+
+    position: relative;
+    display: inline-block;
+  }
+
+  #dropdown-button {
+      padding: .5rem 1rem;
+      background-color: var(--background-color);
+      border: 1px solid var(--font-color);
+      border-radius: 2px;
+      color: var(--font-color);
+      min-width: 10rem;
+      font-size: 1rem;
+  }
+
+  #dropdown-button:hover {
+    background-color: var(--background-secondary-color);
+  }
+
+  #dropdown-button:active {
+    border-color: var(--background-color);
+  }
+
+  #dropdown-list {
+    display: flex; 
+    flex-direction: column;
+
+    border: 1px solid var(--background-secondary-color);
+    
+
+    display: none; 
+    position: absolute;
+
+    width: 100%;
+    overflow: auto;
+
+    z-index: 1;
+  }
+
+  #dropdown-list a {
+    color: var(--font-color); 
+    padding: .7rem 1rem; 
+    text-decoration: none;
+    display: block; 
+    background-color: var(--background-color);
+  }
+
+  #dropdown-list a:hover {
+    background-color: var(--background-secondary-color);
+  }
+
+  #dropdown-list.show {
+    display: block;
+  }
+</style>
+
+<script>
+  function toggleDropdown() {
+    document.getElementById("dropdown-list")!.classList.toggle("show"); 
+  }
+
+  document.getElementById("dropdown-button")!.addEventListener("click", toggleDropdown);
+
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    const target = event.target as HTMLElement; 
+    if (!target.matches('#dropdown-button')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>

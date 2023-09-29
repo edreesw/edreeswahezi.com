@@ -4,6 +4,7 @@ import PostLink from "../../../components/PostLink.astro";
 import Layout from "../../../layouts/Layout.astro";
 import slugify from "../../../utils/utils"; 
 import { getCollection, type CollectionEntry } from 'astro:content';
+import CategoryDropdown from "../../../components/CategoryDropdown.astro";
 
 export interface Props {
     category: string, 
@@ -47,6 +48,8 @@ const filteredPosts = posts.filter((post) => post.data.category?.includes(catego
 
                 <h1>Blog: {category}</h1>
             </header>
+
+            <CategoryDropdown />
 
             <PostsList
             posts={filteredPosts} />
