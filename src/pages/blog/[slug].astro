@@ -29,21 +29,22 @@ const { Content } = await post.render();
 <Layout title={post.data.title}>
     <main>
         <div class="container">
-            <header id="post-header">
-                <a id="blog-back-link" href="/blog">&crarr; Back</a>
-
-                <h1 id="post-title">{post.data.title}</h1>
-
-                <div class="blog-info-container">
-                    <p id="blog-date">Date: {post.data.date.toLocaleDateString()}</p>
-                    <p id="blog-category">Category: 
-                        <a class="category-link" href=`/blog/category/${slugify(post.data.category)}`>{post.data.category}</a>
-                    </p>
-                </div>
-                
-            </header>
-
             <article class="blog-post">
+                <header id="post-header">
+                    <a id="blog-back-link" href="/blog">&crarr; Back</a>
+
+                    <h1 id="post-title">{post.data.title}</h1>
+
+                    <div class="blog-info-container">
+                        <p id="blog-date">Date: {post.data.date.toLocaleDateString()}</p>
+                        <p id="blog-category">Category: 
+                            <a class="category-link" href=`/blog/category/${slugify(post.data.category)}`>{post.data.category}</a>
+                        </p>
+                    </div>
+                    
+                </header>
+
+           
                 <Content />
             </article>
         </div>
