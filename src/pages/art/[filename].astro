@@ -1,0 +1,74 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import "../../styles/global.css";
+import { Image } from 'astro:assets';
+
+export interface Props {
+    illustration: CollectionEntry<"illustrations">
+}
+
+export async function getStaticPaths() {
+    const illustrations = await getCollection("illustrations"); 
+
+    return illustrations.map(illustration => (
+        {
+            params: {
+                filename: illustration.data.filename
+            },
+            props: {
+                illustration: illustration
+            }
+        }
+    ))
+}
+
+const { illustration } = Astro.props as Props;
+---
+
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/mirrorshieldpixel.png">
+	<title>{illustration.data.title}</title>
+</head>
+<body>
+    <div class="full-art-container">
+        <Image
+            src={illustration.data.image}
+            alt={illustration.data.title}
+            class="full-image"
+
+        />
+    </div>
+
+</body>
+</html>
+
+<style>
+    body {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*
+    .full-art-container {
+        max-height: 100vh;
+    }
+    */
+
+    .full-image {
+        max-height: 100vh;
+        width: auto;
+    }
+
+    @media (max-width: 700px) {
+        .full-image {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+</style>

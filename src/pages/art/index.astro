@@ -1,5 +1,16 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
+
+import ArtCard from "../../components/ArtCard.astro";
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+export interface Props {
+    illustration: CollectionEntry<"illustrations">
+}
+
+let illustrations = await getCollection("illustrations"); 
+illustrations = illustrations.sort((a, b) => b.data.year - a.data.year);
 ---
 
 <Layout title="Art">
@@ -11,10 +22,20 @@ import Layout from "../../layouts/Layout.astro";
                 <p>I used to draw a lot as a kid, and as an adult I periodically attempt to pick the hobby back up.</p>
             </header>
     
-    
-            <div class="art-cards-container"></div>
-
         </div>
+
+        <div class="art-cards-container">
+            {
+                illustrations.map(illustration => (
+                <ArtCard 
+                    illustration={illustration}
+                />
+                )) 
+                
+            }
+        </div>
+
+        
     </main>
     </Main>
 </Layout>
@@ -29,8 +50,18 @@ import Layout from "../../layouts/Layout.astro";
     } 
     
     .art-cards-container {        
-        display: flex; 
-        gap: 1rem; 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem; 
     }
 
+    @media (max-width: 700px) {
+        .art-cards-container {
+            grid-template-columns: 1fr 1fr;
+        }
+}
 </style>
