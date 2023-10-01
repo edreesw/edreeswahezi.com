@@ -59,9 +59,16 @@ illustrations = illustrations.sort((a, b) => b.data.year - a.data.year);
         padding: 0 1rem; 
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
         .art-cards-container {
             grid-template-columns: 1fr 1fr;
         }
-}
+    }
+
+    @media (max-width: 450px) {
+        .art-cards-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
 </style>
