@@ -40,13 +40,13 @@ const { posts, category } = Astro.props;
 const filteredPosts = posts.filter((post) => post.data.category?.includes(category));
 ---
 
-<Layout title=`Blog: ${category}`>
+<Layout title={"Category: " + category}>
     <main>
         <div class="container">
             <header class="main-content-header">
                 <a id="blog-back-link" href="/blog">&crarr; Back</a>
 
-                <h1>Blog: {category}</h1>
+                <h1>Category: {category}</h1>
             </header>
 
             <CategoryDropdown />

@@ -26,7 +26,7 @@ const { post } = Astro.props as Props;
 const { Content } = await post.render();
 ---
 
-<Layout title={post.data.title}>
+<Layout title={post.data.title + " | Edrees Wahezi"}>
     <main>
         <div class="container">
             <article class="blog-post">
