@@ -1,5 +1,5 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry, getDataEntryById } from 'astro:content';
 import PostLink from './PostLink.astro';
 
 export interface Props {
@@ -10,7 +10,7 @@ export interface Props {
 let { posts, num } = Astro.props as Props; 
 
 //sort to put newest post first
-posts = posts.sort((a, b) => Date.parse(b.data.date.toDateString()) - Date.parse(a.data.date.toDateString()));
+posts = posts.sort((a, b) => Date.parse(new Date(b.data.date).toDateString()) - Date.parse(new Date(a.data.date).toDateString()));
 
 if(num) {
     posts = posts.slice(0, num); 

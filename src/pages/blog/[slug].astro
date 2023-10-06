@@ -36,7 +36,7 @@ const { Content } = await post.render();
                     <h1 id="post-title">{post.data.title}</h1>
 
                     <div class="blog-info-container">
-                        <p id="blog-date">Date: {post.data.date.toLocaleDateString()}</p>
+                        <p id="blog-date">Date: {new Date(post.data.date).toLocaleDateString()}</p>
                         <p id="blog-category">Category: 
                             <a class="category-link" href=`/blog/category/${slugify(post.data.category)}`>{post.data.category}</a>
                         </p>

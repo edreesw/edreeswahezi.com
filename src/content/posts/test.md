@@ -2,7 +2,7 @@
 title: Test Post!
 slug: test
 excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate, quae, quod, voluptates quibusdam voluptatibus quidem voluptatum quos quia quas nesciunt. Quisquam, quae. Quisquam, quae. Quisquam, quae. Quisquam, quae.
-date: 2023-09-28
+date: 2023/09/28
 author: John Doe
 category: Category C
 ---

@@ -2,7 +2,7 @@
 import slugify from '../utils/utils';
 export interface Props {
     title: string,
-    date: Date; 
+    date: string; 
     category: string;
     slug: string
 }
@@ -13,7 +13,7 @@ const { title, date, category, slug } = Astro.props as Props;
 <div class="post-link-container">
     <a class="post-link" href=`/blog/${slug}`>
         <h3 class=post-link-title>{title}</h3>   
-        <time class="post-link-date">{date.toLocaleDateString()}</time>                     
+        <time class="post-link-date">{new Date(date).toLocaleDateString()}</time>                     
     </a>
 
 
