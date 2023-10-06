@@ -125,7 +125,9 @@ section h2 {
     border-bottom: 2px solid var(--background-secondary-color);
 }
 
-
+.main-content-header h1 {
+    margin: 1rem 0 2rem; 
+}
 /* Specifying header sizes since putting them in an article or section tag changes the default font sizes for some reason */
 h1 {
     font-size: 2em;
