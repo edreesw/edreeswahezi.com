@@ -5,6 +5,8 @@ date: 2021/04/30
 category: Media
 ---
 
+[*Updated on January 3rd, 2024*]
+
 Bleach, like a lot of anime/manga, started off strong and  then saw a pretty consistent decline in quality as time went on. Still, the part of Bleach that always stuck out to me as the most disappointing wasn't the abysmally bad final arc of the series, but the end of the Aizen arc. Random, unearned power ups and nonsensical abilities were nothing new to Bleach at that point (and they'd definitely get worse as the story went on) but the thing that made the final battle with Aizen particularly annoying is how easily it could have been tweaked to have been infinitely more satisfying than what we got. As someone who was pretty invested in the series during my college days, here's my attempt at a basic outline of how I think the leadup to the final battle of the Aizen arc could have been better with minimal changes: 
 
 ---
