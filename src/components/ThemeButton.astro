@@ -1,11 +1,20 @@
-<button id="color-theme-toggle-button">&#127763;</button>
+<button id="color-theme-toggle-button" title="Change site theme">
+    <div id="color-theme-circle"></div>
+</button>
 
 <style>
     #color-theme-toggle-button {
         background-color: var(--background-color);
-        padding: 0 .2em; 
+        padding: .2em; 
         border-radius: 20%;
         border: 2px solid var(--background-secondary-color);
+    }
+
+    #color-theme-circle {
+        border-radius: 100%;
+        background-color: var(--font-color);
+        height: 1rem;
+        width: 1rem;
     }
 
     #color-theme-toggle-button:hover {
