@@ -7,13 +7,13 @@ category: Media
 
 [*Updated on January 3rd, 2024*]
 
-Bleach, like a lot of anime/manga, started off strong and  then saw a pretty consistent decline in quality as time went on. Still, the part of Bleach that always stuck out to me as the most disappointing wasn't the abysmally bad final arc of the series, but the end of the Aizen arc. Random, unearned power ups and nonsensical abilities were nothing new to Bleach at that point (and they'd definitely get worse as the story went on) but the thing that made the final battle with Aizen particularly annoying is how easily it could have been tweaked to have been infinitely more satisfying than what we got. As someone who was pretty invested in the series during my college days, here's my attempt at a basic outline of how I think the leadup to the final battle of the Aizen arc could have been better with minimal changes: 
+Bleach, like a lot of anime/manga, started off strong and then saw a pretty consistent decline in quality as time went on. Still, the part of Bleach that always stuck out to me as the most disappointing wasn't the abysmally bad final arc of the manga, but the end of the Aizen arc. Random, unearned power ups and nonsensical abilities were nothing new to Bleach at that point (and they'd definitely get worse as the story went on) but the thing that made the final battle with Aizen particularly annoying is how easily it could have been tweaked to have been infinitely more satisfying than what we got. It had *potential*. As someone who was pretty invested in the series during my college days, here's my attempt at a basic outline of how I think the lead-up to the final battle of the Aizen arc could have been better with minimal changes: 
 
 ---
 
 In order to avoid changing too much, I'd start tweaking things after the big confrontation between Aizen and the heroes in Fake Karakura Town. Aizen has defeated everyone, and is leaving Ichigo behind as he heads for Soul Society through a portal, Gin at his side. 
 
-Ichigo's resolve is shaken, but his father, Isshin, talks him through it. They understand that they're likely no match for Aizen in his current state, but both resolve to go after him anyway as they're the only ones left who could even hope to put up a fight with their combined powers. They step through the portal ready to make a final stand, together. **Unlike what happens in the manga/anime, there is no time for any last minute training or powerups here.**
+Ichigo is shaken and despondent, but his father talks him through it. They understand that they're likely no match for Aizen in his current state, but both resolve to go after him anyway as they're the only ones left who could even hope to put up a fight with their combined powers. They step through the portal ready to make a final stand, together. **Unlike what happens in the manga/anime, there is no time for any last minute training sequences or powerups here.**
 
 ![Bleach - ch.407](./images/bleach1-ch407.png)
 

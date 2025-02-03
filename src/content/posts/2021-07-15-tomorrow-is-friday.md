@@ -5,7 +5,9 @@ date: 2021/07/15
 category: Poetry
 ---
 
-Last Friday felt like yesterday
+Tomorrow is Friday
+
+Last Friday was yesterday
 
 Every day is Friday
 
