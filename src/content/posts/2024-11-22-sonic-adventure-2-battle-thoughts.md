@@ -10,7 +10,7 @@ So I wouldn't really call myself a huge Sonic the Hedgehog fan. I didn't grow up
 
 ## First Encounter
 
-I remember first seeing Sonic Adventure 2 at a local Toys "R" Us demo kiosk. My sister and I walked over to check it out, but there was a kid already playing it so we stood back and silently judged. The kid was very loudly singing along to the now iconic song "Escape From The City" from the game's opening level, and my sister and I were absolutely *mortified*. There he was -in public- belting out the lyrics with reckless abandon. Why was he doing this? What was it about this game that could awaken such raw passion in this Toys "R" Us? I couldn't understand it, but it stuck with me.
+I remember first seeing Sonic Adventure 2 at a local Toys "R" Us demo kiosk. My sister and I walked over to check it out, but there was a kid already playing it so we stood back and silently judged. The kid was very loudly singing along to the song "Escape From The City" from the game's opening level, and my sister and I were absolutely *mortified*. There he was -in public- belting out the lyrics with reckless abandon. Why was he doing this? What was it about this game that could awaken such raw passion in this Toys "R" Us? I couldn't understand it, but it stuck with me.
 
 ## The Purchase 
 
@@ -28,7 +28,7 @@ The game starts off strong with "Escape From The City", but the soundtrack to th
 
 ## Shadow The Hedgehog
 
-This game introduced us to Shadow, everyones favorite brooding hedgehog. Nothing more needs to be said.
+Sonic Adventure 2 was our introduction to Shadow, everyone's favorite brooding hedgehog. Nothing more needs to be said.
 
 ## YOU GO TO SPACE
 
@@ -50,7 +50,7 @@ You'll frequently find yourself dying in levels due to inconsistent controls and
 
 ## Live And Learn
 
-Something about Sonic Adventure 2 seems to have left a pretty big impression on not just me but a lot of people around my age, so clearly there's *something* special going on here. The characters and their designs, the music, and story, everything comes together to create a deeply memorable experience that still brings me joy when revisiting the game as an adult.
+Something about Sonic Adventure 2 seems to have left a pretty big impression on not just me but a lot of people around my age, so clearly there's *something* special going on here. The characters and their designs, the music, the story - everything comes together to create a deeply memorable experience that still brings me joy when revisiting the game as an adult.
 
 I also still find myself thinking about that singing Toys "R" Us kid a lot, especially now that I'm the one frequently rocking out to the game's soundtrack. Back then my sister and I saw that kid singing his heart out in public to a video game and thought to ourselves, "what a fool". But no, it turns out he wasn’t the fool. He was a prophet, a hero. *We were the fools*. Any game that can make you loudly sing along to cheesy hard rock in public has to be special somehow, and that kid knew then what I came to know much later: Sonic Adventure 2 is **RAD**. 
 
