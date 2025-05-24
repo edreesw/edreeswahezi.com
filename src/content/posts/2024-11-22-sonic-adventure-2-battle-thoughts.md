@@ -6,7 +6,7 @@ category: Video Games
 ---
 [*Updated on February 3rd, 2025*]
 
-So I wouldn't really call myself a huge Sonic the Hedgehog fan. I didn't grow up with the original 2D games (and bounced off them fairly quickly when I eventually tried them), I've never owned a Sega console, and I've never really engaged with the fandom. Despite all that, the GameCube release of Sonic Adventure 2 has somehow maintained a place among my favorite games. Let's reminisce a bit and talk about it. 
+So I wouldn't really call myself a huge Sonic the Hedgehog fan. I didn't grow up with the original 2D games (and bounced off them fairly quickly when I eventually tried them), I've never owned a Sega console, and I've never really engaged with the fandom. Despite all that the GameCube release of Sonic Adventure 2 has somehow maintained a place among my favorite games, so let's reminisce a bit and talk about it. 
 
 ## First Encounter
 
