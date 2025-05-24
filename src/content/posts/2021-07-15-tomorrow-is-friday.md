@@ -7,7 +7,7 @@ category: Poetry
 
 Tomorrow is Friday
 
-Last Friday was yesterday
+Friday was yesterday
 
 Every day is Friday
 
