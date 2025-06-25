@@ -47,6 +47,12 @@ const { Content } = await post.render();
            
                 <Content />
             </article>
+
+            <section class="contact-me-blurb">
+                <img id="logo" src="/mirrorshieldpixel.png" alt="mirror shield logo">
+                <p>* * *</p>
+                <p>[[[ Hey, thanks for reading. If you have any thoughts or comments you'd like to share with me, feel free to <a href="/about">reach out directly.</a> ]]]</p>
+            </section>
         </div>
     </main>
 </Layout>
@@ -54,8 +60,9 @@ const { Content } = await post.render();
 
 <style>
     .blog-info-container {
-        font-size: .75rem;
-        font-weight: bold; 
+        /* font-size: .75rem; */
+        /* font-weight: bold; */
+        font-style: italic;
         margin: 1rem 0 2rem; 
 
         display: flex;
@@ -65,6 +72,15 @@ const { Content } = await post.render();
 
     .blog-info-container p {
         
+    }
+
+    .contact-me-blurb {
+        /* padding-top: 3rem; */
+        text-align: center;
+    }
+
+    .contact-me-blurb #logo {
+        max-width: 128px;
     }
 
 
