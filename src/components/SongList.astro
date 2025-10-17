@@ -1,0 +1,51 @@
+---
+import { getCollection, type CollectionEntry, getDataEntryById } from 'astro:content';
+
+let songs = await getCollection("songs"); 
+
+//sort to put newest post first
+songs = songs.sort((a, b) => b.data.year - a.data.year);
+---
+
+<section class="song-list">
+    {
+        songs.length === 0 ? <h2>No music to share at the moment!</h2> : 
+            songs.map(song => (
+                <div class="song-section">
+                    <h3>{song.data.title} ({song.data.year})</h3>
+                    <audio controls>
+                        <source src={`/music/${song.data.filename}`} type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>{song.body}</p>
+                </div>
+        ))
+    }
+
+</section>
+
+<style>
+    .song-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        overflow-y: scroll;
+        max-height: 400px;
+        scrollbar-gutter: stable both-edges;
+    }
+
+    .song-section {
+        
+    }
+
+    .song-list, .song-section {
+        border: 2px solid var(--font-color);
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+</style>

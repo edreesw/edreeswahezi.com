@@ -1,4 +1,5 @@
 ---
+import SongList from "../components/SongList.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -17,53 +18,7 @@ import Layout from "../layouts/Layout.astro";
                 <section>
                     <h2>Some Songs I've Written</h2>
 
-                    <div class="song-list">
-                        <div class="song-section">
-                            <h3>An October Haunting - 2023</h3>
-                            <audio controls>
-                                <source src="/music/AnOctoberHaunting_Oct2023_forwebsite.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio>
-                            <p>Wrote this in an attempt to come up with something October/Halloween themed.</p>
-                        </div>
-
-                        <div class="song-section">
-                            <h3>Piano Orchestra Song - 2023</h3>
-                            <audio controls>
-                                <source src="/music/PianoOrchestraSong_2023_forwebsite.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio>
-                            <p>Experimenting with an Orchestra plugin and writing in an odd time signature.</p>
-                        </div>
-
-                        <div class="song-section">
-                            <h3>Happy Tune - 2023</h3>
-                            <audio controls>
-                                <source src="/music/HappyTune_2023_forwebsite.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio>
-                            <p>Something I came up with while experimenting with recording my acoustic guitar.</p>
-                        </div>
-
-                        <div class="song-section">
-                            <h3>Triumphant Loop - 2023/2025</h3>
-                            <audio controls loop>
-                                <source src="/music/TriumphantIdea_May2023July2025_forwebsite.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio>
-                            <p>Initial 4 bar idea was something I came up with in 2023 while playing around with an Orchestra plugin, and I added another 4 bars to make the loop in 2025.</p>
-                        </div>
-
-                        <div class="song-section">
-                            <h3>Rising Waltz (MIDI MuseScore audio) - 2020/2021</h3>
-                            <audio controls>
-                                <source src="/music/Rising_Waltz_MIDI_2021_forwebsite.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio>
-                            <p>My first serious attempt at writing something simple for the piano.</p>
-                        </div>
-                    </div>
-
+                    <SongList></SongList>
                 </section>
                 <section>
                     <h2>Gear</h2>
@@ -86,26 +41,5 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-    .song-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        overflow-y: scroll;
-        max-height: 400px;
-        scrollbar-gutter: stable both-edges;
-    }
 
-    .song-section {
-        
-    }
-
-    .song-list, .song-section {
-        border: 2px solid var(--font-color);
-        border-radius: 10px;
-        padding: 1rem;
-    }
-
-    audio {
-        width: 100%;
-    }
 </style>

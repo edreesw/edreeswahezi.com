@@ -22,9 +22,19 @@ const illustrationsCollection = defineCollection({
     year: z.number(),
   })
 })
+
+const songsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    filename: z.string(),
+    title: z.string(),
+    year: z.number(),
+  })
+})
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   'posts': postsCollection,
   'illustrations': illustrationsCollection,
+  'songs': songsCollection,
 };
