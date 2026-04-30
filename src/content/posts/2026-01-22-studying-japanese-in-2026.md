@@ -5,11 +5,13 @@ date: 2026/01/22
 category: Life
 ---
 
-This is it, after over a decade of on and off study I'm fully committing to learning Japanese this year. No, seriously, for real this time. Here's how I'm going to be approaching it: 
+This is it, after over a decade of on and off study I'm fully committing to learning Japanese this year. For real this time. Really. I mean it. If I write it down here, then it has to happen. Yup. It's happening. 
+
+Here's how I'm going to be approaching it: 
 
 ## Methodology
 
-Most people seem to over complicate language learning, but I'm convinced it's actually pretty simple (just not necessarily easy). I'll mostly be focusing on grammar study through (university level) textbooks, lots of input through written works and media like videos or podcasts, and both written and spoken output (ideally with other people).
+Most people seem to over complicate language learning, but I'm convinced it's actually pretty simple (just not necessarily easy). I'll mostly be focusing on grammar study through university level textbooks, lots of input through written works and media like videos or podcasts, and both written and spoken output (ideally with other people).
 
 I've found that a lot of online sources tend to try and focus primarily or exclusively on just one aspect of language, which always seemed really misguided to me. Neglecting either grammar study, input, or output feels like intentionally handicapping yourself, and a lot of the people pushing for those methods just seem like they're trying to sell you something (especially those people who try to downplay grammar). Also, I feel like anyone telling you some variation of "just learn like a baby would" is conveniently forgetting that it takes a baby over a decade to work up to an adult speaking level, and even then they're still expected to take grammar courses in school. You're an adult with an adult brain and understanding of language, so use that to your advantage. 
 
@@ -45,7 +47,7 @@ Consistency is key, and I'm trying to carve out time every day for a bit of Japa
 
 ## Goals 
 
-My interest in the Japanese language started with my love of Japanese video games, so eventually I'd like to be able to start engaging with Japanese media of all kinds without the need for subtitles.
+My ultimate goal is to be able to start engaging with Japanese media of all kinds without the need for subtitles, eventually going back to old games of my childhood and going through them again in the original language. 
 
 As for this year specifically, my goal is to finish going through (and fully mastering) both beginner level textbooks and to firmly enter into intermediate level study with the Tobira books. I'd like to reach a point where I can start reading/working through simple Japanese books and can comfortably hold basic conversations with native speakers to the point where I can survive on a trip to the Japanese countryside.
 
