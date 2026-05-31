@@ -1,7 +1,7 @@
 ---
 title: "Final Fantasy X: Why 'Thank You' Works and 'I Love You' Doesn't"
 slug: ffx-why-thank-you-works-and-i-love-you-doesnt
-date: 2026/05/26
+date: 2026/05/29
 category: Video Games
 ---
 
