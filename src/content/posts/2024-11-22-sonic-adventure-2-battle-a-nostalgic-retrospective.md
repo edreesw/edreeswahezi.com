@@ -1,11 +1,11 @@
 ---
-title: "Sonic Adventure 2: Battle"
-slug: sonic-adventure-2-battle
+title: "Sonic Adventure 2: Battle - A Nostalgic Retrospective"
+slug: sonic-adventure-2-battle-a-nostalgic-retrospective
 date: 2024/11/22
 category: Video Games
 ---
 
-Sonic Adventure 2 has been on my mind more than usual lately due to the impending release of the (loosely related) third Sonic movie. It's the only entry in the Sonic franchise that I've ever had any real affinity toward, so I've been thinking about what it is about this kind of objectively not-so-great game that's gotten me looking forward to what is almost assuredly going to be another mediocre cash grab movie. It's mostly nostalgia, obviously, but indulge me as I reminisce a bit about the one Sonic game that matters. 
+So I wouldn't really consider myself a huge fan of the Sonic series. I didn't grow up with a Sega game console and never clicked with classic 2D Sonic games when I finally tried them as an adult, but if you asked me to list out my favorite or most influential games from my childhood then Sonic Adventure 2: Battle would absolutely be there as the sole representative of the Sonic franchise. Since it's the only entry in such a long running series that I've ever had any real affinity toward, I've often thought about why this deeply flawed game has endured as a personal favorite of mine over all these years. It's mostly nostalgia, obviously, but indulge me as I reminisce a bit about the only Sonic game that matters. 
 
 ## First Encounter
 
@@ -19,15 +19,15 @@ I remember the day of the big purchase vividly because I had come down with some
 
 ## City Escape
 
-First (or early) impressions are everything, and the Sonic dev team made sure the opening level (of the Hero campaign) was one of the most memorable sections of the entire experience. As the level starts, we see Sonic skydive out of a military plane and proceed to skate down the hilly streets of what I'm just now realizing must have been San Francisco while the now iconic song "Escape from the City" plays as the level's musical theme. You then go from skating down hills and doing sick tricks off of conveniently placed ramps to grinding on railings with Sonic's bizarre looking Soap tie-in shoes and eventually find yourself sprinting away from a giant military truck barreling toward the screen. Everything the game does right gets thrown at you all at once right off the bat - speed, memorable music, and lots of style. It's probably one of the most memorable opening levels of that era, and it likely permanently burned "Escape From The City" into the brains of an entire generation. 
-
-## The Music
-
-The Sonic Adventure 2 team understood that a good soundtrack can carry a game, and so it starts off strong with "Escape From The City" and somehow manages to keep up the quality all the way through to the credits. The soundtrack is filled with background tracks that burrow deep into your brain and don't get boring even as they loop, which is good because you'll be hearing them a lot as you restart a level for the 20th time thanks to your character clipping into the level geometry to their death. Another standout vocal track is the surprisingly decent Pumpkin Hill rap, which single handedly helped immortalize an otherwise forgettable Knuckles treasure hunting level. Then there's the game's legendary main theme "Live and Learn", which you get a taste of when you first boot up the game on the main menu screen but then does one of my favorite things in media where it comes full circle and plays again during the climactic final boss battle. There's a lot you can say about the general quality of the Sonic development team's output throughout the years, but they never miss with their music. 
+First (or early) impressions are everything, and the Sonic dev clealry put everything they had into the opening level (of the Hero campaign) making it one of the most memorable sections of the entire experience. As the level starts, we see Sonic skydive out of a military plane and proceed to skate down the hilly streets of what I'm just now realizing must have been San Francisco while the now iconic song "Escape from the City" plays as the level's musical theme. You then go from skating down hills and doing sick tricks off of conveniently placed ramps to grinding on railings with Sonic's bizarre looking Soap tie-in shoes and eventually find yourself sprinting away from a giant military truck barreling toward the screen. Everything the game does right gets thrown at you all at once right off the bat - speed, memorable music, and lots of style. It's probably one of the best opening levels of that era, and it likely permanently burned "Escape From The City" into the minds of an entire generation. 
 
 ## Shadow The Hedgehog
 
-Sonic Adventure 2 was our introduction to Shadow, everyone's favorite brooding hedgehog. Nothing more really needs to be said as that alone should cement Sonic Adventure 2's legacy as one of the greats. Everybody loves a good rival character.
+Sonic Adventure 2 was the world's introduction to Shadow, everyone's favorite brooding hedgehog. He's got rocket shoes that he uses to "skate" instead of run. Pretty cool stuff. Nothing more really needs to be said, everyone loves a good rival character. 
+
+## The Music
+
+A good soundtrack can carry a game, and this game starts off strong with "Escape From The City" and somehow manages to keep up the quality all the way through to the credits. The soundtrack is filled with background tracks that burrow deep into your brain and loop without getting old, which is good because you'll be hearing them a lot as you restart a level for the 20th time thanks to your character clipping into the level geometry to their death. Another standout vocal track is the surprisingly decent Pumpkin Hill rap, which single handedly helped immortalize an otherwise forgettable Knuckles treasure hunting level. Then there's the game's legendary main theme "Live and Learn", which you get a taste of when you first boot up the game on the main menu screen but then does one of my favorite things in media where it comes full circle and plays again during the climactic final boss battle. There's a lot you can say about the general quality of the Sonic development team's output throughout the years, but they never miss with their music. 
 
 ## YOU GO TO SPACE
 
@@ -45,16 +45,10 @@ This is a pretty janky game. Some of it was a bit easier to overlook at the time
 
 Visually, the game looks kinda rough. That's kind of par for the course for an early-ish 3D game of that era, but looking at it now you can't help but chuckle at the stiffly animated models awkwardly interacting with each other in cutscenes that have some of the most bafflingly bad audio mixing and lip syncing I've ever seen in a video game. 
 
-You'll frequently find yourself dying in levels due to inconsistent controls and weird glitchy collisions with the environment, sometimes moving so fast that you just clip right through the platform you're running on and right into the void. Still, I look back on all the jank fondly. They tried, and despite the numerous issues the game somehow ended up being something greater than the sum of its parts.
+You'll frequently find yourself dying in levels due to inconsistent controls and weird glitchy collisions with the environment, sometimes moving so fast that you just clip right through the platform you're running on and right into the void. Still, I look back on all the jank fondly, and despite the numerous issues the game somehow ended up being something greater than the sum of its parts.
 
 ## Live And Learn
 
 Sonic Adventure 2 seems to have been a strangely formative or influential game for people around my age, so clearly there's *something* special going on here. The characters and their designs, the music, the story, the gameplay variety - everything that individually couldn't stand on its own came together to create an experience that somehow worked, and still manages to take up a sizeable chunk of my now adult brain. It might be a classic case of style over substance, but sometimes that might be all you really need.
 
 I also still find myself thinking about that singing Toys "R" Us kid a lot, especially now that I'm the one frequently rocking out and singing along to the game's soundtrack. Back then my sister and I saw that kid singing his heart out in public to a video game and thought to ourselves, "what a *fool*". But no, it turns out he wasn’t the fool. *We were the fools*. He was a prophet, a hero. Any game that can make you loudly sing along to cheesy hard rock in public has to be special somehow, and that kid knew then what I came to know much later: *Sonic Adventure 2 is kinda rad*. 
-
----
-
-### December 21st 2024, Update After Seeing The Sonic 3 Movie 
-
-It was a movie made with just enough Sonic Adventure 2 references to make it worth a watch. They also did the thing they needed to do with Live and Learn, though it probably could have and should have gone further. Whatever, ten out of ten, best film of 2024. 

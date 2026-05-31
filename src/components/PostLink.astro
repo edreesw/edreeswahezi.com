@@ -27,6 +27,10 @@ const { title, date, category, slug } = Astro.props as Props;
         color: var(--font-color);
     }
 
+    .post-link-date {
+        margin-left: 1rem; /* create some space between post title and date */
+    }
+
     a.post-link:hover h3 {
         text-decoration: underline;
     }
